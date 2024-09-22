@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Center Button</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <style>
+        .image-container {
+    position: relative;
+    text-align: center;
+}
+
+.image-container img {
+height: 70%;
+    width: 30%;
+    height: auto;
+}
+@keyframes rotateCircle {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.center-button {
+    position: absolute;
+    top: 71%;
+    left: 49%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0px #999;
+    animation: cursorMove 50s ease-in-out infinite;
+    animation-delay: 10s;
+}
+.center-button:hover {background-color:#3e8e41; }
+
+.center-button:active {
+  background-color:#3e8e41;;
+  box-shadow: 0 5px #666;
+}
+
+
+    </style>
+    <body>
+       
+        
+    <div class="image-container">
+        <img src="C:\Users\shubhi sahu\OneDrive\画像\Screenshots\Screenshot 2024-09-18 223430.png" alt="Getstart" >
+
+        <button class="center-button" onclick="GetStart()">Get Start</button>
+    </div>
+    
+    <script>
+        
+        function GetStart() {
+            window.location.href = "Index1.html";
+        }
+    </script>
+</body>
+</html>
+
